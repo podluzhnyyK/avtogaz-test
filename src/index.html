@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Base template" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Автогаз</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />   
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="body">
+
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__logo-wr">
+          <a href="#" class="header__logo-link">
+            <picture class="header__picture">          
+              <img class="header__logo-image" src="img/ЛОГО.svg" width="20" height="50" alt="АВТОГАЗКОМПЛЕКТ-КРЫМ" title="АВТОГАЗКОМПЛЕКТ-КРЫМ">
+            </picture>
+            <h1 class="header__heading">Заправка газгольдеров в Крыму</h1>
+          </a>
+        </div>
+        <div class="header__contact">
+          <div class="header__address">
+            <p class="header__address-text">г. Симферополь,<br>  ул. г. Аджимушкая, 5/15 кв 2</p>          
+          </div>
+          <div class="header__tel">
+            <a class="header__tel-number" rel="nofollow" href="tel:+79787308058">+7 (978) 730-80-58
+              <svg class="header__tel-number--mb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="32.666px" height="32.666px" viewBox="0 0 32.666 32.666" style="enable-background:new 0 0 32.666 32.666;" xml:space="preserve">
+                <g>
+                  <path d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z    M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0   C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01   c-7.896,0-14.318-6.424-14.318-14.316c0-7.896,6.422-14.319,14.318-14.319c7.896,0,14.317,6.424,14.317,14.319   c0,3.299-1.756,6.568-4.269,7.954c-0.913,0.502-1.903,0.751-2.959,0.761c0.634-0.377,1.183-0.887,1.591-1.529   c0.08-0.121,0.186-0.228,0.238-0.359c0.328-0.789,0.357-1.684,0.555-2.518c0.243-1.064-4.658-3.143-5.084-1.814   c-0.154,0.492-0.39,2.048-0.699,2.458c-0.275,0.366-0.953,0.192-1.377-0.168c-1.117-0.952-2.364-2.351-3.458-3.457l0.002-0.001   c-0.028-0.029-0.062-0.061-0.092-0.092c-0.031-0.029-0.062-0.062-0.093-0.092v0.002c-1.106-1.096-2.506-2.34-3.457-3.459   c-0.36-0.424-0.534-1.102-0.168-1.377c0.41-0.311,1.966-0.543,2.458-0.699c1.326-0.424-0.75-5.328-1.816-5.084   c-0.832,0.195-1.727,0.227-2.516,0.553c-0.134,0.057-0.238,0.16-0.359,0.24c-2.799,1.774-3.16,6.082-0.428,9.292   c1.041,1.228,2.127,2.416,3.245,3.576l-0.006,0.004c0.031,0.031,0.063,0.06,0.095,0.09c0.03,0.031,0.059,0.062,0.088,0.095   l0.006-0.006c1.16,1.118,2.535,2.765,4.769,4.255c4.703,3.141,8.312,2.264,10.438,1.098c3.67-2.021,5.312-6.338,5.312-9.719   C32.666,7.326,25.339,0,16.333,0z"/>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                </svg>
+            </a>
+            <a class="header__tel-link" href="#">Заказать звонок</a>
+          </div>
+        </div>        
+        <button class="btn btn--burger">
+          <span class="btn--burger__line"></span>
+          <span class="btn--burger__line"></span>
+          <span class="btn--burger__line"></span>
+        </button>        
+      </div>      
+    </div>
+    <nav class="nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">О Компании</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">Документация</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">Статьи</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /header -->
+
+  <main class="main">
+
+    <!-- presentation -->
+    <section class="presentation">
+      <div class="container">
+        <div class="presentation__wrap">
+          <h2 class="presentation__heading">Доставим <span class="text-color-blue">газ</span></h2>
+          <p class="presentation__heading-small">в любую точку Крыма от <span class="text-color-blue">25 Р/л</span></p>
+          <p class="presentation__text">Компания АВТОГАЗКОМПЛЕКТ-КРЫМ специализируется на поставках СУГ (сжиженного углеводородного газа). 
+            Вы можете купить пропан-бутан крупным, мелким оптом и в розницу для заправки газгольдеров разных объемов
+          </p>
+          <div class="presentation__wrap-form">
+            <form class="presentation-form" method="get">                          
+              <input class="presentation-form__search-input" type="tel" name="presentation" placeholder="+7 (___) ___-__-__">
+              <input class="btn btn--email" type="submit" value="Отправить заявку">               
+              <a class="btn btn--presentation-link" href="#">Рассчитать стоимость заправки</a>
+            </form>
+          </div>
+          <ul class="presentation__list">
+            <li class="presentation__item">
+              <svg class="presentation__item-img" width="34" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#2A579C;}
+                </style>
+                <g>
+                  <g>
+                    <circle class="st0" cx="166" cy="316" r="15"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle class="st0" cx="346" cy="316" r="15"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path class="st0" d="M256,0C115,0,0,115,0,256c0,141,115,256,256,256c141,0,256-115,256-256C512,115,397,0,256,0z M256,482    C131.4,482,30,380.6,30,256S131.4,30,256,30s226,101.4,226,226S380.6,482,256,482z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path class="st0" d="M256,61C148.4,61,61,148.5,61,256c0,55.3,23.7,108.2,65,145.2c6.2,5.5,15.7,5,21.2-1.2    c5.5-6.2,5-15.7-1.2-21.2c-31.2-28-50.5-66.6-54.3-107.9H106c8.3,0,15-6.7,15-15s-6.7-15-15-15H91.7c3.1-34.3,16.7-65.5,37.6-90.5    l10.1,10.1c5.9,5.9,15.4,5.9,21.2,0s5.9-15.4,0-21.2l-10.1-10.1c25-20.9,56.3-34.5,90.5-37.6V106c0,8.3,6.7,15,15,15s15-6.7,15-15    V91.7c34.3,3.1,65.5,16.7,90.5,37.6l-10.1,10.1c-5.9,5.9-5.9,15.4,0,21.2c5.9,5.9,15.4,5.9,21.2,0l10.1-10.1    c20.9,25,34.5,56.3,37.6,90.5H406c-8.3,0-15,6.7-15,15s6.7,14.9,15,14.9h14.3c-3.8,41.2-23.1,80-54.3,108    c-6.2,5.5-6.7,15-1.2,21.2c5.5,6.2,15,6.7,21.2,1.2c41.3-37,65-89.9,65-145.2C451,148.6,363.6,61,256,61z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path class="st0" d="M271,213.6V166c0-8.3-6.7-15-15-15s-15,6.7-15,15v47.6c-17.5,6.2-30,22.9-30,42.4c0,24.8,20.2,45,45,45    s45-20.2,45-45C301,236.4,288.5,219.8,271,213.6z M256,271c-8.3,0-15-6.7-15-15s6.7-15,15-15s15,6.7,15,15S264.3,271,256,271z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path class="st0" d="M316,331H196c-8.3,0-15,6.7-15,15v60c0,8.3,6.7,15,15,15h120c8.3,0,15-6.7,15-15v-60    C331,337.7,324.3,331,316,331z M301,391h-90v-30h90V391z"/>
+                  </g>
+                </g>
+                </svg>
+                <span class="presentation__item-text">Заполним газгольдер по счетчику<br> и выдадим чек на месте.</span>
+            </li>
+            <li class="presentation__item">
+              <svg class="presentation__item-img" width="34" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#2A579C;}
+                </style>
+                <path class="st0" d="M512,239.9c0-74.7-60.8-135.5-135.5-135.5H214.8V70.2h1.1c8.3,0,15-6.7,15-15s-6.7-15-15-15h-16.1h-64.3h-16.1  c-8.3,0-15,6.7-15,15s6.7,15,15,15h1.1v35.1C52.8,112.8,0,170.3,0,239.9C0,300.3,39.7,351.6,94.3,369c-8.7,10.8-14,24.6-14,39.6  c0,34.8,28.4,63.2,63.2,63.2c23.6,0,44.1-13,55-32.1h114.9c10.9,19.2,31.4,32.1,55,32.1c34.8,0,63.2-28.4,63.2-63.2  c0-15-5.3-28.8-14-39.6C472.3,351.6,512,300.3,512,239.9z M361.5,168.7h-34.3v-34.3h34.3V168.7z M327.2,198.7h34.3V233h-34.3V198.7z   M184.8,70.2v34.3h-34.3V70.2H184.8z M143.5,441.8c-18.3,0-33.2-14.9-33.2-33.2c0-18.3,14.9-33.2,33.2-33.2s33.2,14.9,33.2,33.2  C176.7,426.9,161.8,441.8,143.5,441.8z M206.7,409.7c0-0.4,0-0.7,0-1.1c0-12.2-3.5-23.5-9.5-33.2h117.4c-6,9.7-9.5,21-9.5,33.2  c0,0.4,0,0.7,0,1.1H206.7z M368.5,441.8c-18.3,0-33.2-14.9-33.2-33.2c0-18.3,14.9-33.2,33.2-33.2c18.3,0,33.2,14.9,33.2,33.2  C401.7,426.9,386.8,441.8,368.5,441.8z M376.5,345.4h-241c-53.1,0-97.1-39.4-104.4-90.5H248c8.3,0,15-6.7,15-15s-6.7-15-15-15H31.1  c7.3-51.1,51.3-90.5,104.4-90.5h64.3h97.5v145.7c0,8.3,6.7,15,15,15s15-6.7,15-15V263h34.3v17.1c0,8.3,6.7,15,15,15s15-6.7,15-15  V135.5c51.1,7.3,90.5,51.3,90.5,104.4C482,298.1,434.7,345.4,376.5,345.4z"/>
+              </svg>
+              <span class="presentation__item-text">Доставка осуществляется в зимний период<br> за 1-2 дня, в летний - в течение дня.</span>
+            </li>
+            <li class="presentation__item">
+              <svg class="presentation__item-img" width="34" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#2A579C;}
+                </style>
+                <path class="st0" d="M497,302h-15V105c0-41.4-33.6-75-75-75H207.4C201.2,12.5,184.6,0,165,0c-24.8,0-45,20.2-45,45v45h-15  c-41.4,0-75,33.6-75,75v49.6C12.5,220.8,0,237.4,0,257s12.5,36.2,30,42.4V377c0,33.5,22.1,61.9,52.5,71.5L65.7,482H15  c-8.3,0-15,6.7-15,15s6.7,15,15,15h482c8.3,0,15-6.7,15-15c0-9.9,0-169.4,0-180C512,308.7,505.3,302,497,302z M482,332v30h-30v-30  H482z M482,392v90H360v-90H482z M452,105v197h-15c-8.3,0-15,6.7-15,15v45h-77c-8.3,0-15,6.7-15,15v105h-65.7l-16.7-33.5  c30.4-9.6,52.5-38,52.5-71.5v-77.6c17.5-6.2,30-22.9,30-42.4s-12.5-36.2-30-42.4V165c0-41.4-33.6-75-75-75h-15V60h197  C431.8,60,452,80.2,452,105z M150,45c0-8.3,6.7-15,15-15s15,6.7,15,15v45h-30V45z M105,120h120c24.8,0,45,20.2,45,45v47H60v-47  C60,140.2,80.2,120,105,120z M45,242h240c8.3,0,15,6.7,15,15s-6.7,15-15,15H45c-8.3,0-15-6.7-15-15S36.7,242,45,242z M60,377v-75  h210v75c0,24.8-20.2,45-45,45H105C80.2,422,60,401.8,60,377z M114.3,452h101.5l15,30H99.3L114.3,452z"/>
+              </svg>
+              <span class="presentation__item-text">Газ проходит фильтрацию перед доставкой.<br> Вы получите газ без примесей серы, воды и масла</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /presentation -->
+
+    <!-- work -->
+    <section class="work">
+      <div class="container">
+        <h2 class="work__heading section-heading">Заправляем газгольдеры на объектах</h2>
+        <div class="work__tabs-wrap tabs js-tabs">          
+          <ul role="tablist" class="work__tabs-btn tabs__tab-list">
+            <li role="presentation" class="work__tabs-item"><a class="btn btn--tabs tabs__trigger js-tab-trigger" role="tab" aria-controls="section1" href="#section1">Частные клиенты</a></li>
+            <li role="presentation" class="work__tabs-item"><a class="btn btn--tabs tabs__trigger js-tab-trigger" role="tab" aria-controls="section2" href="#section2">Дачные посёлки</a></li>
+            <li role="presentation" class="work__tabs-item"><a class="btn btn--tabs tabs__trigger js-tab-trigger" role="tab" aria-controls="section3" href="#section3">Комплексы АГЗС</a></li>
+            <li role="presentation" class="work__tabs-item"><a class="btn btn--tabs tabs__trigger js-tab-trigger" role="tab" aria-controls="section4" href="#section4">Промышленные организации</a></li>
+          </ul>
+          <div class="work__tab-container">
+            <div id="section1" role="tabpanel" class="work__tab-content tabs__panel js-tab-panel">
+              <div class="work__tab-content-text">
+                <p class="tab-content-text">Газгольдеры для частного дома — это стальные емкости, предназначенные для хранения, распределения и подачи газового топлива. В качестве топлива используется СУГ — сжиженный углеводородный газ, который поступает из газгольдера по трубам в виде паровой фазы. В России используются пропан-бутановые смеси. Они отличаются высокой теплотворной способностью и в то же время низким пределом взрываемости — то есть потребуется большая концентрация горючего вещества, чтобы он воспламенился при контакте с кислородом. Но важно, чтобы газгольдер был установлен в соответствии с правилами размещения сосуда под давлением на частном участке, иначе вероятность взрыва баллонов и отравления газом будет намного выше.</p>
+                <a class="btn btn--email btn--email-tab" href="#">Отправить заявку</a>
+              </div>
+              <div class="work__tab-content-img">
+                <img class="work__tab-img" src="img/tab.jpg" srcset="img/tab2x.jpg 2x" width="561" height="352" alt="Частные клиенты" title="Частные клиенты">
+              </div>              
+            </div>
+            <div id="section2" role="tabpanel" class="work__tab-content tabs__panel js-tab-panel">
+              <div class="work__tab-content-text">
+                <p class="tab-content-text">Газгольдеры для частного дома — это стальные емкости, предназначенные для хранения, распределения и подачи газового топлива. </p>
+                <a class="btn btn--email btn--email-tab" href="#">Отправить заявку</a>
+              </div>
+              <div class="work__tab-content-img">
+                <img class="work__tab-img" src="img/tab.jpg" srcset="img/tab2x.jpg 2x" width="561" height="352" alt="Дачные посёлки" title="Дачные посёлки">
+              </div>               
+            </div>
+            <div id="section3" role="tabpanel" class="work__tab-content tabs__panel js-tab-panel">
+              <div class="work__tab-content-text">
+                <p class="tab-content-text"></p>
+                <a class="btn btn--email btn--email-tab" href="#">Отправить заявку</a>
+              </div>
+              <div class="work__tab-content-img">
+                <img class="work__tab-img" src="img/tab.jpg" srcset="img/tab2x.jpg 2x" width="561" height="352" alt="Комплексы АГЗС" title="Комплексы АГЗС">
+              </div>               
+            </div>
+            <div id="section4" role="tabpanel" class="work__tab-content tabs__panel js-tab-panel">
+              <div class="work__tab-content-text">
+                <p class="tab-content-text">Газгольдеры для частного дома — это стальные емкости, предназначенные для хранения, распределения и подачи газового топлива. В качестве топлива используется СУГ — сжиженный углеводородный газ, который поступает из газгольдера по трубам в виде паровой фазы. В России используются пропан-бутановые смеси. Они отличаются высокой теплотворной способностью и в то же время низким пределом взрываемости — то есть потребуется большая концентрация горючего вещества, чтобы он воспламенился при контакте с кислородом. Но важно, чтобы газгольдер был установлен в соответствии с правилами размещения сосуда под давлением на частном участке, иначе вероятность взрыва баллонов и отравления газом будет намного выше.</p>
+                <a class="btn btn--email btn--email-tab" href="#">Отправить заявку</a>
+              </div>                            
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+    <!-- /work -->
+
+    <!-- advantage -->
+    <section class="advantage">
+      <div class="container">
+        <h2 class="advantage__heading section-heading">Почему с нами выгодно работать?</h2>
+      <p class="advantage__heading-text">Доставим бытовой газ, заполним газгольдер любого объема в Крыму и Севастополе </p>
+      <ul class="advantage__list">
+        <li class="advantage__item">
+          <div class="advantage__item-wrap">
+            <span class="advantage__item-number">01</span>
+            <h3 class="advantage__item-heading">Работаем на крымском<br> рынке 15 лет</h3>
+          </div>          
+          <p class="advantage__item-text">За это время накопили богатый опыт, расширили команду, приобрели лучшее оборудование и спецтехнику, лицензии, чтобы Вы могли получать очищенный газ в срок в самых труднодоступных уголках Крыма в любое время года.</p>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__item-wrap">
+            <span class="advantage__item-number">02</span>
+            <h3 class="advantage__item-heading">Своя газонаполнительная станция<br> в Бахчисарае</h3>
+          </div>          
+          <p class="advantage__item-text">Благодаря газонаполнительной станции у нас всегда есть газ в запасе, который проходит проверку качества и Вам не придется ждать поставки очищенного пропан-бутана с материковой части России</p>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__item-wrap">
+            <span class="advantage__item-number">03</span>
+            <h3 class="advantage__item-heading">Свой спецтранспорт по доставке<br> сжиженных газов</h3>
+          </div>          
+          <p class="advantage__item-text">В нашем автопарке 5 газовозов разного объема, оборудованные рукавами до 50 м и позволяющие доставить газ в удаленную и труднодоступную местность без заезда на участок и порчи его внешнего вида</p>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__item-wrap">
+            <span class="advantage__item-number">04</span>
+            <h3 class="advantage__item-heading">Фильтрация газа перед<br> доставкой</h3>
+          </div>          
+          <p class="advantage__item-text">Газ, который приходит от производителя бывает
+            с примесями серы, воды, масла и др., поэтому мы фильтруем газ на газонаполнительной станции, чтобы Вы получили очищенный газ и Ваши котлы не ломались</p>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__item-wrap">
+            <span class="advantage__item-number">05</span>
+            <h3 class="advantage__item-heading">Доставка газа по расписанию<br> или в день заказа</h3>
+          </div>                   
+          <p class="advantage__item-text">Мы наладили доставку практически по всей территории Крыма, поэтому вы можете получить газ доставку газа по расписанию или в день заказа. Обычно в зимний период доставка занимает 1-2 дня, в летний - в течение дня</p>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__item-wrap">
+            <span class="advantage__item-number">06</span>
+            <h3 class="advantage__item-heading">Мы работаем честно<br> и заботимся о Вас</h3>
+          </div>          
+          <p class="advantage__item-text">Работаем открыто и честно, заливаем литр в литр по счетчику, который установлен на газовозах стоят счетчики выданного газа, при заправке водители выбивают чеки, а менеджеры и другие работники всегда могут проконсультировать</p>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__item-wrap">
+            <span class="advantage__item-number">07</span>
+            <h3 class="advantage__item-heading">Покупаем непосредственно с товарно-сырьевой биржей СПБМТСБ и Газпромом</h3>
+          </div>          
+          <p class="advantage__item-text">Это общероссийская биржа, где приобретают и продают все нефтепродукты, в т.ч. Газпром.Газ поступает на газонаполнительную станциюв Бахчисарае с заводов Газпрома «Сургут» и «Каргала», а оттуда разливается по газовозам.</p>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__item-wrap">
+            <span class="advantage__item-number">08</span>
+            <h3 class="advantage__item-heading">Мы работаем соблюдая все<br> нормативы и требования</h3>
+          </div>          
+          <p class="advantage__item-text">Весь товар приходит с паспортами качества
+            от производителя. С другими документами
+            Вы можете ознакомиться на странице  
+            «Документация»
+          </p>
+        </li>
+      </ul>
+      <div class="advantage__wrap-form">
+        <form class="advantage-form" method="get">                          
+          <input class="advantage-form__search-input" type="tel" name="advantage" placeholder="+7 (___) ___-__-__">
+          <input class="btn btn--email btn--advantage" type="submit" value="Получить консультацию газовщика">          
+        </form>
+      </div>
+      </div>      
+    </section>
+    <!-- /advantage -->
+
+    <!-- form -->
+    <section class="form">
+      <div class="container">
+        <div class="form__wrap">
+          <div class="form__text-wrap">
+            <p class="form__text">Оставьте заявку и получите<br> <span class="form__text--bold">техосмотр газгольдера</span><br> <span class="form__text--bold-bold">бесплатно</span></p>
+            <ul class="form__list">
+              <li class="form__list-item">Осмотр газгольдера, проверка состояния вентилей, обмылив</li>
+              <li class="form__list-item">Консультация специалиста, устранение неполадок</li>
+            </ul>
+          </div>
+          <div class="form__form-wrap">
+            <div class="form__form-bg">
+              <p class="form__form-heading">Заполните форму</p>
+              <p class="form__form-text">и наш специалист свяжется с вами<br> в течение 30 секунд</p>
+              <div class="form__wrap-form">
+                <form class="form-form" method="get"> 
+                  <input class="form-form__input-text" type="text" name="form"  placeholder="Имя">                         
+                  <input class="form-form__input-tel" type="tel" name="form" placeholder="+7 (___) ___-__-__">
+                  <input class="btn btn--email btn--form" type="submit" value="Получить техосмотр">
+                  <label class="form-form__accept-icon">
+                    <input class="form-form__icon" type="checkbox" name="accept" value="Согласие на обработку персональных данных" checked="checked">
+                    <span class="form-form__icon-text">Согласие на обработку персональных данных</span>
+                  </label>         
+                </form>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /form -->
+
+    <!-- steps -->
+    <section class="steps">
+      <div class="container">
+        <h2 class="steps__heading section-heading"><span class="text-color-blue">6 простых шагов</span> от звонка до заправленного газгольдера</h2>
+        <ul class="steps__list">
+          <li class="steps__item">
+            <span class="steps__item-number">01</span>
+            <div class="steps__item-img-wrap">
+              <svg class="steps__item-img" width="34" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#2A579C;}
+                </style>
+                <g>
+                  <path class="st0" d="M497,13.7H15c-8.3,0-15,6.7-15,15v377.8c0,8.3,6.7,15,15,15h182.6v46.9h-4.3c-8.3,0-15,6.7-15,15s6.7,15,15,15   h125.4c8.3,0,15-6.7,15-15s-6.7-15-15-15h-4.3v-46.9H497c8.3,0,15-6.7,15-15V28.7C512,20.4,505.3,13.7,497,13.7z M30,43.7h452   v269.7H30V43.7z M284.4,468.3h-56.8v-46.9h56.8L284.4,468.3L284.4,468.3z M482,391.5H30v-48.1h452V391.5z"/>
+                  <path class="st0" d="M393.6,86.6H133c-8.3,0-15,6.7-15,15s6.7,15,15,15h260.6c8.3,0,15-6.7,15-15S401.9,86.6,393.6,86.6z"/>
+                  <path class="st0" d="M393.6,240.5H296c-8.3,0-15,6.7-15,15c0,8.3,6.7,15,15,15h97.6c8.3,0,15-6.7,15-15S401.9,240.5,393.6,240.5   L393.6,240.5z"/>
+                  <path class="st0" d="M393.6,168.1H296c-8.3,0-15,6.7-15,15s6.7,15,15,15h97.6c8.3,0,15-6.7,15-15S401.9,168.1,393.6,168.1z"/>
+                  <path class="st0" d="M236,168.1H133c-8.3,0-15,6.7-15,15v72.4c0,8.3,6.7,15,15,15h103c8.3,0,15-6.7,15-15v-72.4   C251,174.9,244.3,168.1,236,168.1L236,168.1z M221,240.5h-73v-42.4h73V240.5z"/>
+                </g>
+                </svg>
+            </div>              
+            <h3 class="steps__item-heading">Оставьте заявку на сайте </h3>                             
+            <p class="steps__item-text">или позвонитепо номеру +7 (978) 730-80-58
+              Наши менеджеры ответят на Ваши вопросы в течение дня</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__item-number">02</span>
+            <div class="steps__item-img-wrap">
+              <svg class="steps__item-img" width="34" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#2A579C;}
+                </style>
+                <g>
+                  <path class="st0" d="M381.6,312l-35.1-7.3c38.9-44.7,27.4-92.4,29.4-108.7h5c8.3,0,15-6.7,15-15v-50c0-7.2-5.1-13.4-12.2-14.7   l-13.4-2.6c-10.8-34-36.3-61.6-69.4-74.9V15c0-8.3-6.7-15-15-15h-60c-8.3,0-15,6.7-15,15v23.7c-33.1,13.4-58.6,40.9-69.4,75   l-13.4,2.6c-7.1,1.4-12.2,7.5-12.2,14.7v50c0,8.3,6.7,15,15,15h5c2.1,16.2-9.4,64,29.4,108.6l-35.1,7.4C72.7,324.1,31,375,31,434.3   V497c0,8.3,6.7,15,15,15h420c8.3,0,15-6.7,15-15v-62.7C481,375.4,439.7,324.2,381.6,312z M317.2,329.2l43.8,9.2V391H151v-52.7   l43.8-9.2C231.9,351.3,279,352,317.2,329.2L317.2,329.2z M151,421h210v61H151V421z M241,30h30v46h-30V30z M146,143.4l10.4-2   c5.9-1.1,10.5-5.6,11.8-11.4c5.6-24.7,21.3-45.6,42.8-58v19c0,8.3,6.7,15,15,15h60c8.3,0,15-6.7,15-15V72   c21.4,12.4,37.2,33.3,42.8,57.9c1.3,5.8,5.9,10.3,11.8,11.4l10.5,2V166H146V143.4z M346,196v30c0,49.6-40.4,90-90,90   s-90-40.4-90-90v-30H346z M61,434.3c0-39.2,24.5-74.1,60-88.3v136H61V434.3z M451,482h-60c0-50.3,0-85.6,0-136   c35.5,14.2,60,49.1,60,88.3V482z"/>
+                </g>
+                </svg>
+            </div>          
+            <h3 class="steps__item-heading">Выезд специалиста на местность</h3>                             
+            <p class="steps__item-text">Мы проверим, проедет ли к Вашему участку спецтехника, правильно ли установлен газгольдер и т.п.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__item-number">03</span>
+            <div class="steps__item-img-wrap">
+              <svg class="steps__item-img" width="34" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#2A579C;}
+                </style>
+                <g>
+                  <path class="st0" d="M467,62h-65.9c-1.6-4.6-5.5-8.3-10.5-9.6L362,45.3V15c0-8.3-6.7-15-15-15h-60c-8.3,0-15,6.7-15,15v30.3   l-28.6,7.2c-5,1.2-8.9,4.9-10.5,9.6H167c-24.8,0-45,20.2-45,45v360c0,24.8,20.2,45,45,45h300c24.8,0,45-20.2,45-45V107   C512,82.2,491.8,62,467,62z M422,352h-55c-8.3,0-15,6.7-15,15v55H212V92h20v25c0,8.3,6.7,15,15,15h140c8.3,0,15-6.7,15-15V92h20   V352z M400.8,382L382,400.8V382H400.8z M290.6,71.6c6.7-1.7,11.4-7.7,11.4-14.6V30h30v27c0,6.9,4.7,12.9,11.4,14.6l28.6,7.2V102   H262V78.7L290.6,71.6z M482,467c0,8.3-6.7,15-15,15H167c-8.3,0-15-6.7-15-15V107c0-8.3,6.7-15,15-15h15v345c0,8.3,6.7,15,15,15h170   c4,0,7.8-1.6,10.6-4.4l70-70c2.8-2.8,4.4-6.6,4.4-10.6V92h15c8.3,0,15,6.7,15,15V467z"/>
+                  <path class="st0" d="M377,162H257c-8.3,0-15,6.7-15,15v120c0,8.3,6.7,15,15,15h120c8.3,0,15-6.7,15-15V177   C392,168.7,385.3,162,377,162z M362,282h-90v-90h30v15c0,8.3,6.7,15,15,15s15-6.7,15-15v-15h30V282z"/>
+                  <path class="st0" d="M317,352h-60c-8.3,0-15,6.7-15,15s6.7,15,15,15h60c8.3,0,15-6.7,15-15S325.3,352,317,352z"/>
+                  <path class="st0" d="M75,92H60V77c0-8.3-6.7-15-15-15s-15,6.7-15,15v15H15c-8.3,0-15,6.7-15,15v300c0,2,0.4,4,1.2,5.9L30,480.1V497   c0,8.3,6.7,15,15,15s15-6.7,15-15v-16.9l28.8-67.2C89.6,411,90,409,90,407V107C90,98.7,83.3,92,75,92z M45,438.9L37.7,422h14.5   L45,438.9z M60,392H30V202h30V392z M60,172H30v-50h30V172z"/>
+                </g>
+                </svg> 
+            </div>                   
+            <h3 class="steps__item-heading">Консультация специалиста на месте</h3>                             
+            <p class="steps__item-text">Ответим на вопросы точечно, дадим график поставок газа в Вашем районе, договоримся о важных для Вас деталях</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__item-number">04</span> 
+            <div class="steps__item-img-wrap">
+              <svg class="steps__item-img" width="34" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#2A579C;}
+                </style>
+                <g>
+                  <path class="st0" d="M476,422h-5v-61.9c19.6-31.5,30-67.1,30-103.1c0-93.7-69.3-176.4-170-204.7V15c0-8.3-6.7-15-15-15H196   c-8.3,0-15,6.7-15,15v37.3C80.3,80.6,11,163.3,11,257c0,36,10.4,71.6,30,103.1V422h-5c-8.3,0-15,6.7-15,15s6.7,15,15,15h25v25   c0,19.3,15.7,35,35,35h40c19.3,0,35-15.7,35-35v-25h170v25c0,19.3,15.7,35,35,35h40c19.3,0,35-15.7,35-35v-25h25   c8.3,0,15-6.7,15-15S484.3,422,476,422z M71,422v-30h30v30H71z M71,362v-25c0-2.8,2.2-5,5-5h25v30H71z M141,477c0,2.8-2.2,5-5,5H96   c-2.8,0-5-2.2-5-5v-25h50V477z M296,422h-80v-40h80V422z M326,422v-55c0-8.3-6.7-15-15-15H201c-8.3,0-15,6.7-15,15v55h-55v-90h250   v90H326z M381,297v5H131v-5C214,263.9,298,263.9,381,297z M181,250.3V192h150v58.3C281.1,239.4,230.9,239.4,181,250.3L181,250.3z    M421,477c0,2.8-2.2,5-5,5h-40c-2.8,0-5-2.2-5-5v-25h50V477z M441,422h-30v-30h30V422z M441,362h-30v-30h25c2.8,0,5,2.2,5,5V362z    M436,302h-25v-15c0-6-3.6-11.4-9.1-13.8c-13.6-5.8-27.3-10.8-40.9-15V192h15c8.3,0,15-6.7,15-15s-6.7-15-15-15H136   c-8.3,0-15,6.7-15,15s6.7,15,15,15h15v66.2c-13.7,4.2-27.3,9.2-40.9,15c-5.5,2.4-9.1,7.8-9.1,13.8v15H76c-9.8,0-18.7,4-25,10.6   c-6.6-17.9-10-36.7-10-55.6c0-83.2,65.1-156.6,158.4-178.5c6.8-1.6,11.6-7.6,11.6-14.6V30h90v33.9c0,7,4.8,13,11.6,14.6   C405.9,100.4,471,173.8,471,257c0,18.9-3.4,37.6-10,55.6C454.7,306.1,445.8,302,436,302z"/>
+                </g>
+                </svg> 
+            </div>            
+            <h3 class="steps__item-heading">Контакт с водителем газовоза</h3>                             
+            <p class="steps__item-text">Мы передадим Ваш номер непосредственно водителю, чтобы он доставил газ в удобное для Вас время</p>
+          </li>
+          <li class="steps__item"> 
+            <span class="steps__item-number">05</span>
+            <div class="steps__item-img-wrap">
+              <svg class="steps__item-img" width="34" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#2A579C;}
+                </style>
+                <g>
+                  <path class="st0" d="M461,205C461,92,369,0,256,0S51,92,51,205c0,97.6,68.5,179.4,160,200v77h-15c-8.3,0-15,6.7-15,15s6.7,15,15,15   h120c8.3,0,15-6.7,15-15s-6.7-15-15-15h-15v-77C392.5,384.4,461,302.6,461,205z M81,205c0-96.5,78.5-175,175-175s175,78.5,175,175   s-78.5,175-175,175S81,301.5,81,205z M271,482h-30v-72.6c5,0.4,10,0.6,15,0.6c5,0,10-0.2,15-0.6V482z"/>
+                  <path class="st0" d="M174.7,144.9c2.9,2.9,6.8,4.4,10.6,4.4s7.7-1.5,10.6-4.4c5.9-5.9,5.9-15.4,0-21.2l-9.9-9.9   c15.7-12,34.5-20.1,55-22.8v14c0,8.3,6.7,15,15,15c8.3,0,15-6.7,15-15V91c20.5,2.7,39.3,10.8,55,22.8l-9.9,9.9   c-5.9,5.9-5.9,15.4,0,21.2c2.9,2.9,6.8,4.4,10.6,4.4s7.7-1.5,10.6-4.4l9.9-9.9c12,15.7,20.1,34.5,22.8,55h-14c-8.3,0-15,6.7-15,15   s6.7,15,15,15h14c-2.6,20.1-10.4,38.9-22.8,55l-9.9-9.9c-5.9-5.9-15.4-5.9-21.2,0s-5.9,15.4,0,21.2l21.2,21.2   c2.9,2.9,6.8,4.4,10.6,4.4s7.7-1.5,10.6-4.4c0.4-0.4,0.7-0.8,1-1.2C386.3,279.1,401,243.2,401,205c0-39.4-15.8-75.2-41.4-101.3   c-0.3-0.4-1.8-1.9-2.3-2.3C331.2,75.8,295.4,60,256,60s-75.2,15.8-101.3,41.4c-0.4,0.3-1.9,1.8-2.3,2.3   C126.8,129.8,111,165.6,111,205c0,38.2,14.7,74.1,41.4,101.4c0.3,0.4,0.7,0.8,1,1.2c2.9,2.9,6.8,4.4,10.6,4.4s7.7-1.5,10.6-4.4   l21.2-21.2c5.9-5.9,5.9-15.4,0-21.2c-5.9-5.9-15.4-5.9-21.2,0l-9.9,9.9c-12.4-16.1-20.2-34.9-22.8-55h14c8.3,0,15-6.7,15-15   s-6.7-15-15-15h-14c2.7-20.5,10.8-39.3,22.8-55L174.7,144.9z"/>
+                  <circle class="st0" cx="226" cy="325" r="15"/>
+                  <circle class="st0" cx="286" cy="325" r="15"/>
+                  <path class="st0" d="M266.6,215.6l35.4-35.4c5.9-5.9,5.9-15.4,0-21.2c-5.9-5.9-15.4-5.9-21.2,0l-35.4,35.4   c-5.9,5.9-5.9,15.4,0,21.2c2.9,2.9,6.8,4.4,10.6,4.4C259.8,220,263.7,218.5,266.6,215.6z"/>
+                </g>
+                </svg> 
+            </div>            
+            <h3 class="steps__item-heading">Заправка газгольдера</h3>                             
+            <p class="steps__item-text">Водитель проверит исправность газгольдера, 
+              при необходимости удалит неполадки, заправит его, а после снова проверит на герметичность</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__item-number">06</span>
+            <div class="steps__item-img-wrap">
+              <svg class="steps__item-img" width="34" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#2A579C;}
+                </style>
+                <g>
+                  <path class="st0" d="M507.6,163c5.9-5.9,5.9-15.4,0-21.2l-126.1-126c-5.9-5.9-15.4-5.9-21.2,0l-39.4,39.4l-55.5,17l-54.6-17.8   l-39.9-39.9c-5.9-5.9-15.4-5.9-21.2,0L4.4,159.7c-5.9,5.9-5.9,15.4,0,21.2L44,220.5l14.5,55.3c-5.4,3.8-7.3,6.5-16.8,15.8   c-27.6,27.6-9.1,74.6,29.3,76.6c1.2,22.9,19.5,41.2,42.4,42.4c1.2,22.9,19.5,41.2,42.4,42.4c0.6,11.1,5.2,21.4,13.1,29.4   c17.5,17.5,46.1,17.5,63.6,0l11.3-11.3c0.2-0.2,0.4-0.5,0.6-0.7l18.3,18.3c17.5,17.5,46.1,17.5,63.6,0c7.2-7.2,11.7-16.4,12.8-26.4   c0.2,0,0.4,0,0.6,0c11.5,0,23-4.4,31.8-13.1c7-7,11.5-16,12.8-25.7c0.4,0,0.9,0,1.3,0c11.5,0,23-4.4,31.8-13.1   c6.9-6.9,11.3-15.7,12.7-25.2c0.7,0,1.5,0.1,2.2,0.1c11.5,0,23-4.4,31.8-13.1c17.6-17.6,17.6-46,0-63.6l-41.8-41.8l44-62.6   L507.6,163z M57.4,191.5l-21.2-21.2l124-124l21.2,21.2L57.4,191.5z M84,333.9c-5.8,5.8-15.3,5.8-21.2,0c-5.8-5.8-5.8-15.3,0-21.1   l10.6-10.6c9.4-9.4,25.5-2.7,25.5,10.6C99,322.2,91.5,325.3,84,333.9z M126.5,376.4c-5.8,5.8-15.3,5.8-21.2,0   c-5.8-5.8-5.8-15.3,0-21.1l42.4-42.4c5.8-5.8,15.3-5.8,21.2,0c5.8,5.8,5.8,15.3,0,21.1L126.5,376.4z M168.9,418.8   c-5.8,5.8-15.3,5.8-21.2,0c-5.8-5.8-5.8-15.3,0-21.1l31.8-31.8c5.8-5.8,15.3-5.8,21.2,0c5.8,5.8,5.8,15.3,0,21.1h0L168.9,418.8z    M222.6,449.9l-11.3,11.3c-5.8,5.8-15.3,5.8-21.2,0c-5.8-5.8-5.8-15.3,0-21.1l11.3-11.3c5.8-5.8,15.3-5.8,21.2,0   C228.5,434.6,228.5,444.1,222.6,449.9L222.6,449.9z M443,329.7c5.9,5.8,5.9,15.3,0,21.2c-5.8,5.8-15.3,5.8-21.2,0l-35.3-35.3   c-6.8-6.8-16.3-6.3-22-0.6c-5.9,5.9-5.9,15.4,0,21.2l31.7,31.7c5.8,5.8,5.9,15.3,0,21.2c-5.8,5.8-15.3,5.8-21.2,0   c-11.3-11.3-9.4-9.4-31.7-31.7c-5.9-5.9-15.4-5.9-21.2,0c0,0,0,0,0,0c0,0,0,0,0,0c-5.9,5.9-5.9,15.4,0,21.2l28.6,28.6   c5.5,5.9,5.3,15.1-0.4,20.7c-5.8,5.8-15.3,5.8-21.2,0L301,399.8c-5.9-5.9-15.4-5.9-21.2,0c-5.9,5.9-5.9,15.4,0,21.2l0.7,0.7   c0,0,0,0,0,0l24.7,24.7c5.8,5.8,5.9,15.3,0,21.2c-5.8,5.8-15.3,5.8-21.2,0l-27-27c0-0.4,0-0.8,0-1.2c0-12-4.7-23.3-13.2-31.8   c-4.2-4.2-9.1-7.4-14.3-9.6c13.6-24.8,1-56.9-27.4-64.8c3.2-14.6-0.9-30.3-12.1-41.5c-17.5-17.5-46.1-17.5-63.6,0l-1.8,1.8   c-6.7-14-20.6-24.2-37.2-25.5l-13.3-50.7L206.8,84.6l30.8,10c-48,48.1-56.3,56.4-57.5,57.5c0,0,0,0,0,0c-0.1,0.1-0.1,0.1-0.1,0.1   c0,0,0,0,0,0c0,0,0,0,0,0c-17.8,17.8-17.8,46.5,0,64.3c17.7,17.7,46.6,17.7,64.3,0l42.8-42.8L443,329.7z M400.9,245.2L297.7,142   c-5.9-5.9-15.4-5.9-21.2,0L223,195.4c-6,6-15.8,6-21.9,0c-6-6-6-15.8,0-21.9c0,0,0,0,0,0c0,0,0,0,0.1-0.1c0,0,0,0,0,0c0,0,0,0,0,0   c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c1-1,9.6-9.7,72.1-72.4l51.3-15.7l110.8,110.7L400.9,245.2z M350.1,68.4l20.9-20.9   l104.8,104.8l-20.9,20.9L350.1,68.4z"/>
+                  <path class="st0" d="M201.2,173.5C201.2,173.5,201.2,173.5,201.2,173.5C201.1,173.6,201.1,173.6,201.2,173.5   C201.2,173.6,201.2,173.5,201.2,173.5z"/>
+                  <path class="st0" d="M201.2,173.5L201.2,173.5L201.2,173.5L201.2,173.5z"/>
+                  <path class="st0" d="M180,152.3L180,152.3C180,152.3,180,152.3,180,152.3z"/>
+                </g>
+                </svg> 
+            </div>            
+            <h3 class="steps__item-heading">Расчет</h3>                             
+            <p class="steps__item-text">После заполнения газгольдера водитель снимет показания счетчика, выдаст чек и пожелает Вам хорошего дня</p>
+          </li>
+        </ul>
+        <div class="steps__wrap-form">
+          <form class="steps-form" method="get">                          
+            <input class="steps-form__search-input" type="tel" name="advantage" placeholder="+7 (___) ___-__-__">
+            <input class="btn btn--email btn--steps" type="submit" value="отправить заявку">          
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- /steps -->
+
+    <!-- slider -->
+    <section class="slider">
+      <div class="container">
+        <h2 class="slider__heading section-heading">Многие годы мы <span class="text-color-blue">заправляем газгольдеры</span> для крупных и мелких 
+          сетей АЗС, предприятий и частных домов по Крыму и Севастополю</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper slider__list">
+              <div class="slider__item swiper-slide">
+                <div class="slider__img-wrap">
+                  <img class="slider__img" src="img/slider1.png" alt="tes" title="tes">
+                </div>                
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="slider__img-wrap">
+                  <img class="slider__img" src="img/slider2.png" alt="золотая балка" title="золотая балка">
+                </div>                                            
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="slider__img-wrap">
+                  <img class="slider__img" src="img/slider3.png" alt="atan" title="atan">
+                </div>                
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="slider__img-wrap">
+                  <img class="slider__img" src="img/slider4.png" alt="crs" title="crs">
+                </div>                
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="slider__img-wrap">
+                  <img class="slider__img" src="img/slider1.png" alt="tes" title="tes">
+                </div>                
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>  
+                       
+          </div> 
+          <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>          
+      </div>      
+    </section>
+    <!-- /slider -->
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-up">
+        <div class="footer-up__logo-wr">
+          <a href="#" class="footer-up__logo-link">
+            <picture class="footer-up__picture">          
+              <img class="footer-up__logo-image" src="img/ЛОГО1.svg" width="20" height="50" alt="АВТОГАЗКОМПЛЕКТ-КРЫМ" title="АВТОГАЗКОМПЛЕКТ-КРЫМ">
+            </picture>
+            <p class="footer-up__heading">Заправка газгольдеров в Крыму</p>
+          </a>
+        </div>
+        <ul class="footer-up__nav">
+          <li class="footer-up__item">
+            <a class="footer-up__link" href="#">О Компании</a>
+          </li>
+          <li class="footer-up__item">
+            <a class="footer-up__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="footer-up__item">
+            <a class="footer-up__link" href="#">Документация</a>
+          </li>
+          <li class="footer-up__item">
+            <a class="footer-up__link" href="#">Статьи</a>
+          </li>
+          <li class="footer-up__item">
+            <a class="footer-up__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer-up__list">
+          <li class="footer-up__item">
+            <a class="footer-up__link" href="#">Доставка газа для АЗС</a>
+          </li>
+          <li class="footer-up__item">
+            <a class="footer-up__link" href="#">Заправка газгольдеров</a>
+          </li>
+          <li class="footer-up__item">
+            <a class="footer-up__link" href="#">Услуги по транспортировке сжиженного газа</a>
+          </li>
+        </ul>
+        <div class="footer-up__contact">
+          <p class="footer-up__address-text">г. Симферополь,<br>  ул. г. Аджимушкая, 5/15 кв 2</p>
+          <a class="footer-up__tel-number" rel="nofollow" href="tel:+79787308058">+7 (978) 730-80-58</a>
+          <span class="footer-up__social">
+            <a href="#" rel="nofollow">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+                <image data-name="вк copy" width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAADXUlEQVRYhcWYz08TQRTHv7MtpbtFSgABsRWwoDER4l+AiYkXPRh/HIiJejLePRkT/wPjwQsn40Vi9B8wMcGL8aBHwIDSllDEQGkL0naB0u6Y18yYpbPbglD6SZp0dt68/c7s2zdvlk1NT+MANAPoAtAB4AQAA4BXDC8CMAHkAKQBJAFs79e1V7niTDuAiBChOVoAPvFrAxACwAGsAYgKYVWpJYRmfBFAt9JTGyaEd4nVmQGQdxvlNjuiF8Dl/xRRCYkZBRBWegRuK3IOwHnl6uGge10CEAAwV+nJaUUG6yDCzhCAC7WEnHYyqgODlY/JLoQCc+QYREiGxWNShNDb4RYz9cAD28SlkPYjejsOSieAk3Yhgw0QIYlIITJtNwpaFV0TIpjSfXyUM7BXbGCuDEYiD8AY7SHI5XJfV1ZWpjo7OyPdXV1PNU1r55yXSqXS7Ozc3DOy8fl8/jPh8BgYa6I2tywzFo9PuPkXdHjFLupKk8837PV4KNPC39w8urGx8SiVSsWCra2ThmGMMcY8Ho9nSI4Ph0K3dV2/JdvFYnHGzbeNVk3kD1cy6fRr2ccYC4ZDoXv0v7C7+7tyTFsw2GMYxk3Z5pxnfy0vv3DzbaMcI1Vzx2oy+b1QKHyRbb/ff62nu3vYo2m63Y6W5VRv72NRCpR1pDOZ59lsNqU4VfFSYXTdIdXvoaWlpb2/r2+cMaaLmW5yzk1N03qknWVZK/Z2Pp+fiC8svFOcuaCJyqoquVwuk81mX0kbxlir/aZEZZuMqvmsoKiJ8q4mi4nEx52dnU/79RwwjLtnBwbuKB3ObJGQrGOXA9FY7OX29vYHtQdIJBIPTdN8v0dMIHB/oL//hmKssqntp56UWJZlzUej48lk8kmhUPjMOS+XfqVSafHP5uZqLB5/Y5rmW875OsUQ/XRdv6I4UklTsFKKv9rA7EpF9iStyI4obhtFSsYIRMnfKGKw5Y8M5a4GiEiJs8+eREZ7Qs2ccoSUAPw7ZtqFUD6ZOkYh0+J4qgghlp3OHHWAYnLJ7tZpj5kH8EO5enSQ/9lKb247709xTh2pYnNQZEwsOY2rdhN6TOuHOITbWRMiXA/h1YQQFMDfxHGDKn0q/auWDDaO9LOEhPIMCar1oWZLbKIyL+3vQw2Av0AS/Lt71vOYAAAAAElFTkSuQmCC"/>
+              </svg>
+            </a>            
+          </span>
+          <span class="footer-up__social">
+            <a href="#" rel="nofollow">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+                <image data-name="инста copy" width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAADjElEQVRYhcWYy08TURTGv3l0qCXQhkchlBpMHHyBCxOjrNzK3+HGpa5cuHLhwpXuNCb+Da4MblkYVHZgfKERKTSIUJ4W2k6n5iNn4rR3Om3F4i+5Cb33nns/zpx7zp3R5ubn0QJRAEkAPQC6AMQAmGLuAMgD2AWwAWANQKHZpU2lJ5heAKcB9APQAmcAlrQEgDQAV8R8BZBTZrcopBPAmHihVXQAg9J+AHgnHgskTMgwgPEGc5plQLw6B2AlyKbeJmcB2Erv0eBel8TLn2tX0gOWPtcGEX7OBK1fKyQtQdlu6PFUPSF02fgxiPC4KMdfEUIRhjK9fZhyIg/xgrVfWl10XddPptOTsVjsumEYPFH1RJfL5fJyPp9/uZTJTLmu6yoz/jAgyTHnZdarYUIoYtS270QikYlKpbLjOM5713UDc4Ku6zHTNM9rmtZdKpVmPi8sPGggZhXALD1yAkCfMuyDnqCIYrE4821x8WGxWDxQJgmGYRjRaLR7OJW6aVnWBG0Xv39/oUys9kqHLlmzXto+hI+DnggS0dXV1cfm/R617XunRkaeZLPZp7ShrbJgNdw7aUrGC4UxUSqVZv0iUkNDVxKJxA1d15nC4bru6tbW1jPHcVY0Tes8KBT2+AgjkcjlsLWFXgrpVrpVDH9MUERPT8/dSqWSPygUptjXYVnX2JfL5e6vZLOPRVw+JKirHOvFSEvQExSRWV6+tb29zWBDPB5/nh4efsSxlWz2TYtLxvSQehMI44GPo1AsTnsiCP9mH8f8MdMkZlCt+S/ocrNqmt3d3XUGJmMiHo8Penb8m30c45wW/xmHj2Vfrn1Nw9PBwGRMJJPJaUiwapoW29zcfKgYNGbflDtmIyFlZkzvhwTjfQZmtKNjEnJ8KcIfqGJTVlZT2THlojukDPlVlMvLTNuWZUW9XMIN2bzArH0cnEsb2ioLqmzocp+sKEM+WMBYO06NjNzmBv4xCggSwbm0oa2yYDXce82LkfWwoscqOmrbF1k7Rm37QitFj7bKpGoOXzu86tsvFbgubboGkFf+awCZaFSF2wDD4i1qbmhU1EyE/ysceddBrZA9EXNczPlfuGpTfAbAl2MQ8rH2RSuo1nwAsKD0/js+Ba1fr/J+FLeNhZyOVnH+5pWTLEnWHQ/LMU1ypJdw8gvA6yY/S9TC/PFTYu7InyU86Bk270MNhbFQ8nZ39A81AH4D88J3P/jQFqYAAAAASUVORK5CYII="/>
+              </svg>
+            </a>            
+          </span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-bottom__item">
+          <a class="footer-bottom__link" href="#">Политика конфиденциальности</a></span>
+        <span class="footer-bottom__item">г. Симферополь © Copyright  2021 г.</span>
+        <span class="footer-bottom__item">Сделано в 
+          <a class="footer-bottom__link-img" href="https://sheer.bz/" rel="nofollow" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="22" viewBox="0 0 60 22">
+              <image data-name="Vector Smart Object" width="60" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAWCAYAAACcy/8iAAAEEUlEQVRYhe2Ya4iXRRTGf9v+zRVaLTW7UBGk5mqiFbWV0oUKMuniB8PEyIpIEQqKkDDIog/1obvhh4iMYC0L2awoCyrNrDRDyi6rRmheuthFK12NfGL0edvZd+a/uv8v1dYDA+/Mec7MO2fOnHPet04S3cQ8YDzQBGzrrvLfjUNqWH80MBA4LpH00A3/q/Gf23Cl1B8GjAEagR+At4BNiVZ19ANuBVqAthIryC723W8AtgJvZHhl9AUutN6hwAZgMbClxBsJ3JBoQzvwCvDOvl4IWpLOkfSBUuyVNF/S0eaFttqs0dFY0a6x7IloLATG2yX9msy+H4skHZuZq17S3ZJ2JRrSH5KelNQ34k9NWJ0R+PXhhEf5JIP1ngVeAH4BTgCmA5OAscAZwDeJ/Tqj3r1e0ejDwM1+XgkstPecBkwGLvPzWZE31TkbTHF/FfASsAM4HZgIXA+caY/cEa33KPCQn+t98g+a/3mwzBzb4bGMlXtJetXyaQdxwoWV57k/3v09kq7L8I+S9J45izPz7JQ0KaM3RFJbyZsKndkZ/sn21vWhs9DEVkmVDLlB0rmS+tSw4eXuz8xwizZA0jbzhvkKrHf/2gy/aINtyN8l9T/AhkPbEITBpT8GJgBXAKuB5+ziK4A9vvRLE+eFacBGYKf7hwHNkfxI4Gw/HwPMTmbowLfAAGCcM8dJlgw5gF64YscDlySSzhjkd2ir2L/D/bwUGAHcY+ouYJkN0OJ+jJuSaTvjxKh3SyLNYyjwZSSZlWWlGGzjl1FxoTTHcWVuXFqGy325y8bmUo7+ylZcay8Ige5tYHtpgRDoTgWeBh4BPvL4M8De5HVSvO45X7Z3zU8YKUJganUqfSqRdmAuMCPn66Ed4SDzbhTY3+zmHe4f6ea41dopkd6gKpxcK9be7Ltd4AFJIwt+OMU7fCL9Imv8ZGuFkH+vx8YkNusaPwIfmtGVS4f7+imwBOgNfOaihCid5TDCRcuCkmylC5WwB5z2Oq6jpN9sivclNWYsN8HyjTVE6YmRpWc6Asf8oZLWWv61M0IYv81jIQJfnVlnlKRN5qwprd0apaIi2ocsMHbf9ZU0PXqpdZJmSLpA0jhJ90UV0o01bDi0x6P5P5F0v6Q7JS2Q1O7xkG+bS1XWokgv5Oq7JM2S9Lyk3R7fLqmpyoZDGyhpmceDzlWFYLKkrcrje5eMBXeVWU2ZDedKS1y0fJedfb9n5YxXcWlZrSRdKml4xtitpXl6S2qxrD2O0uH+XOQIfTjwsyPya1GuDTjP5V0o38p/Dxqjj4d1JVmY/3xH+Abn0CUH+fEQ3ms40McfD6Eu+KLEm+q48yJwZUlW53hQV8sfj38qutrwX/j/B0APQJcu25M2vAbYDSyvygD+BPIJHFJ+vN9/AAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->  
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>

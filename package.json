@@ -1,0 +1,39 @@
+{
+  "name": "avtogaztest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp styles",
+    "start": "gulp"    
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "critical": "^3.0.0",
+    "del": "^6.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-terser": "^2.0.1",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html": "^1.0.2",
+    "stylelint": "^13.11.0",
+    "stylelint-config-recess-order": "^2.3.0",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
