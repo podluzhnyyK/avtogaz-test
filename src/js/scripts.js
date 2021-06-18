@@ -208,7 +208,7 @@ const swiper = new Swiper('.swiper-container', {
     },
 
     autoplay: {
-        delay: 3000,
+        delay: 5000,
     },
 });
 
@@ -221,7 +221,6 @@ function maskPhone(selector, masked = '+7 (___) ___-__-__') {
         const template = masked;
         const def = template.replace(/\D/g, '');
         const val = this.value.replace(/\D/g, '');
-        console.log(template);
         let i = 0;
         let newValue = template.replace(/[_\d]/g, function(a) {
             return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
@@ -252,3 +251,9 @@ function maskPhone(selector, masked = '+7 (___) ___-__-__') {
 
 maskPhone('#tel');
 
+// btn-up
+const btnUp = document.querySelector('.btn--up');
+
+btnUp.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
