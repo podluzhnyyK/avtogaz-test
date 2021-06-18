@@ -172,8 +172,8 @@ document.querySelector('.btn--burger').addEventListener('click', () => {
 // sleder
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
-    slidesPerView: 5,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 20,
     loop: true,
     breakpoints: {
         // when window width is >= 320px
@@ -182,12 +182,12 @@ const swiper = new Swiper('.swiper-container', {
             spaceBetween: 20,
         },
         // when window width is >= 480px
-        890: {
+        550: {
             slidesPerView: 3,
             spaceBetween: 30,
         },
         // when window width is >= 640px
-        1000: {
+        900: {
             slidesPerView: 5,
             spaceBetween: 30,
         },

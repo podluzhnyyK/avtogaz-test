@@ -715,7 +715,8 @@ a {
     display: none; }
   .form-form__icon-text {
     color: #ffffff;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     .form-form__icon-text::before {
       content: "";
       position: absolute;
@@ -849,6 +850,19 @@ a {
     .swiper-button-next,
     .swiper-button-prev {
       display: none; } }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #2a579c;
+  font-size: large;
+  font-weight: bold; }
+
+.swiper-pagination-bullet {
+  background: #2a579c;
+  opacity: 1; }
+
+.swiper-pagination-bullet-active {
+  background: #1e95ca; }
 
 .footer {
   background-color: #142d53;

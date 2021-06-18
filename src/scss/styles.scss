@@ -1005,6 +1005,7 @@ a {
   &__icon-text {
     color: #ffffff;
     position: relative;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -1185,6 +1186,22 @@ a {
   @media (max-width: $breakpoint-xl-max) {
     display: none;
   }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #2a579c;
+  font-size: large;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+  background: #2a579c;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1e95ca;
 }
 
 //-------------/slider------------
