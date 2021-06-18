@@ -895,7 +895,7 @@ a {
       align-items: center; } }
   .footer-up__logo-wr {
     max-width: 275px; }
-    @media (max-width: 648px) {
+    @media (max-width: 992px) {
       .footer-up__logo-wr {
         margin-bottom: 20px; } }
   .footer-up__logo-link {
@@ -934,6 +934,9 @@ a {
   .footer-up__contact {
     color: #ffffff;
     padding-right: 10px; }
+    @media (max-width: 992px) {
+      .footer-up__contact {
+        padding-right: 0; } }
   .footer-up__address-text {
     margin-top: 0;
     margin-bottom: 16px; }

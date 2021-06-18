@@ -1247,7 +1247,7 @@ a {
   &__logo-wr {
     max-width: 275px;
 
-    @media (max-width: $breakpoint-sm-max) {
+    @media (max-width: $breakpoint-lg-max) {
       margin-bottom: 20px;
     }
   }
@@ -1302,6 +1302,10 @@ a {
   &__contact {
     color: #ffffff;
     padding-right: 10px;
+
+    @media (max-width: $breakpoint-lg-max) {
+      padding-right: 0;
+    }
   }
 
   &__address-text {
