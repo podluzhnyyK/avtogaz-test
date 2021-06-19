@@ -48,6 +48,10 @@ $breakpoint-md-max: 768px;
 $breakpoint-lg-max: 992px;
 $breakpoint-xl-max: 1200px;
 $breakpoint-xxl-max: 1400px;
+
+$base-color: #ffffff;
+$base-blue: #2a579c;
+$base-blue-light: #1e95ca;
 // === / VARIABLES ===
 
 // === COMMON ===
@@ -86,7 +90,7 @@ a {
 }
 
 .text-color-blue {
-  color: #2a579c;
+  color: $base-blue;
 }
 
 //-----------------btn---------------
@@ -112,13 +116,13 @@ a {
     display: block;
     padding: 8px 8px;
     border-radius: 5px;
-    background-color: #2a579c;
-    border: 1px solid #2a579c;
+    background-color: $base-blue;
+    border: 1px solid $base-blue;
     margin-left: 36px;
     margin-bottom: 9px;
 
     &:hover {
-      background-color: #1e95ca;
+      background-color: $base-blue-light;
     }
 
     @media (max-width: $breakpoint-sm-max) {
@@ -129,7 +133,7 @@ a {
       display: block;
       width: 1rem;
       height: 2px;
-      background-color: #ffffff;
+      background-color: $base-color;
 
       &:not(:last-child) {
         margin-bottom: 5px;
@@ -144,7 +148,7 @@ a {
     width: 270px;
     height: 72px;
     border-radius: 9px;
-    color: #ffffff;
+    color: $base-color;
     background: rgb(235, 26, 35);
     background: linear-gradient(
       0deg,
@@ -182,7 +186,7 @@ a {
     width: 270px;
     height: 72px;
     border-radius: 9px;
-    color: #ffffff;
+    color: $base-color;
     background: rgb(20, 126, 175);
     background: linear-gradient(
       0deg,
@@ -212,10 +216,10 @@ a {
     line-height: 24px;
     text-transform: uppercase;
     border-radius: 9px;
-    background-color: #2a579c;
+    background-color: $base-blue;
     width: 326px;
     height: 70px;
-    color: #ffffff;
+    color: $base-color;
 
     &:hover {
       background-color: #1a4585;
@@ -230,7 +234,7 @@ a {
     }
 
     &.is-selected {
-      background: #1e95ca;
+      background: $base-blue-light;
     }
   }
 
@@ -256,30 +260,27 @@ a {
     width: 34px;
     height: 34px;
     border-radius: 5px;
-    background-color: #2a579c;
-    border: 1px solid #2a579c;
+    background-color: $base-blue;
+    border: 1px solid $base-blue;
     margin-top: 15px;
     align-items: center;
     justify-content: center;
 
     &:hover {
-      background-color: #1e95ca;
+      background-color: $base-blue-light;
     }
 
     &__img {
       width: 22px;
       height: auto;
-      fill: #fff;
+      fill: $base-color;
     }
   }
 }
 
 .btn-up-wrap {
   margin-left: 10%;
-
-  @media (max-width: $breakpoint-sm-max) {
-    margin-left: 0;
-  }
+  margin-right: 10%;
 }
 
 //-----------------/btn---------------
@@ -314,7 +315,7 @@ a {
   padding-top: 10px;
 
   @media (max-width: $breakpoint-sm-max) {
-    background-color: #fff;
+    background-color: $base-color;
     box-shadow: 0px 11px 20px 0px rgba(9, 75, 83, 0.3);
   }
 
@@ -355,7 +356,7 @@ a {
     right: 0;
     font-size: 11px;
     line-height: 24px;
-    color: #2a579c;
+    color: $base-blue;
     margin: 0;
 
     @media (max-width: $breakpoint-sm-max) {
@@ -391,7 +392,7 @@ a {
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
-    color: #2a579c;
+    color: $base-blue;
     position: relative;
     top: -5px;
     left: 2px;
@@ -404,7 +405,7 @@ a {
 
     &--mb {
       display: none;
-      fill: #2a579c;
+      fill: $base-blue;
 
       @media (max-width: $breakpoint-sm-max) {
         display: block;
@@ -437,7 +438,7 @@ a {
     @media (max-width: $breakpoint-sm-max) {
       flex-direction: column;
       align-items: center;
-      background-color: #fff;
+      background-color: $base-color;
     }
   }
 
@@ -455,7 +456,7 @@ a {
   }
 
   &__nav-link {
-    color: #2a579c;
+    color: $base-blue;
     font-weight: bold;
 
     &:hover {
@@ -478,7 +479,7 @@ a {
 }
 
 .header-fixed {
-  background-color: #fff;
+  background-color: $base-color;
   box-shadow: 0px 11px 20px 0px rgba(9, 75, 83, 0.3);
   padding-top: 10px;
 }
@@ -519,7 +520,7 @@ a {
     background-repeat: no-repeat;
     z-index: -1;
 
-    @media (max-width: $breakpoint-md-max) {
+    @media (max-width: $breakpoint-lg-max) {
       display: none;
     }
   }
@@ -537,7 +538,11 @@ a {
     background-repeat: no-repeat;
     z-index: -1;
 
-    @media (max-width: $breakpoint-md-max) {
+    @media (max-width: 1700px) {
+      left: -100px;
+    }
+
+    @media (max-width: $breakpoint-lg-max) {
       display: none;
     }
   }
@@ -650,7 +655,7 @@ a {
   }
 
   &__tabs-wrap {
-    background-color: #ffffff;
+    background-color: $base-color;
     padding-top: 15px;
     padding-left: 16px;
   }
@@ -711,7 +716,7 @@ a {
 //-------------advantage------------
 
 .advantage {
-  background-color: #fff;
+  background-color: $base-color;
   padding-top: 38px;
   background-image: url("../img/advantage2x.png");
   background-repeat: no-repeat;
@@ -762,7 +767,7 @@ a {
   &__item-number {
     font-size: 24px;
     line-height: normal;
-    color: #2a579c;
+    color: $base-blue;
     font-weight: bold;
     margin-right: 23px;
     position: relative;
@@ -813,7 +818,7 @@ a {
     border-radius: 8px;
     border: none;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color: $base-color;
     box-shadow: inset 0px 3px 7px 0px rgba(27, 33, 43, 0.13);
 
     @media (max-width: $breakpoint-md-max) {
@@ -826,7 +831,7 @@ a {
 
 //-------------form-------------
 .form {
-  background-color: #fff;
+  background-color: $base-color;
   padding-top: 59px;
   padding-bottom: 52px;
 
@@ -873,7 +878,7 @@ a {
 
   &__text {
     margin: 0;
-    color: #fff;
+    color: $base-color;
     font-size: 40px;
     line-height: 58px;
     margin-bottom: 60px;
@@ -925,7 +930,11 @@ a {
     font-weight: bold;
     font-size: 18px;
     list-style: none;
-    color: #fff;
+    color: $base-color;
+
+    @media (max-width: $breakpoint-xl-max) {
+      justify-content: flex-start;
+    }
 
     @media (max-width: $breakpoint-sm-max) {
       flex-direction: column;
@@ -963,7 +972,7 @@ a {
   }
 
   &__form-bg {
-    background-color: #2a579c;
+    background-color: $base-blue;
     text-align: center;
     padding-top: 11px;
     padding-right: 50px;
@@ -977,12 +986,12 @@ a {
     line-height: 38px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #ffffff;
+    color: $base-color;
     margin-bottom: 0;
   }
 
   &__form-text {
-    color: #ffffff;
+    color: $base-color;
     font-weight: normal;
     margin-top: 2px;
     margin-bottom: 28px;
@@ -1033,7 +1042,7 @@ a {
   }
 
   &__icon-text {
-    color: #ffffff;
+    color: $base-color;
     position: relative;
     cursor: pointer;
 
@@ -1045,7 +1054,7 @@ a {
       height: 15px;
       left: -21px;
       top: 0;
-      border: 1px solid #ffffff;
+      border: 1px solid $base-color;
       box-sizing: border-box;
     }
   }
@@ -1164,7 +1173,7 @@ a {
     border-radius: 8px;
     border: none;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: $base-color;
     box-shadow: inset 0px 3px 7px 0px rgba(27, 33, 43, 0.13);
 
     @media (max-width: $breakpoint-sm-max) {
@@ -1220,18 +1229,18 @@ a {
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  color: #2a579c;
+  color: $base-blue;
   font-size: large;
   font-weight: bold;
 }
 
 .swiper-pagination-bullet {
-  background: #2a579c;
+  background: $base-blue;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background: #1e95ca;
+  background: $base-blue-light;
 }
 
 //-------------/slider------------
@@ -1250,14 +1259,6 @@ a {
     height: 2px;
     background-color: #435775;
     bottom: 70px;
-
-    @media (max-width: $breakpoint-xl-max) {
-      bottom: 85px;
-    }
-
-    @media (max-width: $breakpoint-md-max) {
-      display: none;
-    }
   }
 }
 
@@ -1303,7 +1304,7 @@ a {
     right: 0;
     font-size: 11px;
     line-height: 24px;
-    color: #ffffff;
+    color: $base-color;
     margin: 0;
   }
 
@@ -1318,7 +1319,7 @@ a {
   }
 
   &__link {
-    color: #ffffff;
+    color: $base-color;
 
     &:hover {
       text-decoration: underline;
@@ -1330,7 +1331,7 @@ a {
   }
 
   &__contact {
-    color: #ffffff;
+    color: $base-color;
     padding-right: 10px;
 
     @media (max-width: $breakpoint-lg-max) {
@@ -1344,7 +1345,7 @@ a {
   }
 
   &__tel-number {
-    color: #ffffff;
+    color: $base-color;
     margin-bottom: 30px;
     display: block;
   }
@@ -1357,31 +1358,25 @@ a {
 .footer-bottom {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  justify-content: space-between;
+  color: $base-color;
   font-size: 13px;
   font-weight: normal;
   padding-top: 10px;
   padding-bottom: 15px;
 
   @media (max-width: $breakpoint-lg-max) {
-    justify-content: center;
-  }
-
-  @media (max-width: $breakpoint-sm-max) {
     flex-direction: column;
   }
 
   &__item {
-    margin-right: 10%;
-
-    @media (max-width: $breakpoint-sm-max) {
-      margin-right: 0;
+    @media (max-width: $breakpoint-lg-max) {
       margin-bottom: 20px;
     }
   }
 
   &__link {
-    color: #ffffff;
+    color: $base-color;
 
     &:hover {
       text-decoration: underline;
